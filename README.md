@@ -1,4 +1,5 @@
 # CommonLib 
+A collection of most commonly used functions in modern webapps
 ------
 ### Installation
 ```
