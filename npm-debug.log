@@ -1,5 +1,8 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--update-readme' ]
 2 info using npm@3.8.9
 3 info using node@v6.2.0
 4 verbose publish [ '.' ]
@@ -31,6 +34,7 @@
 21 silly publish   description: 'A collection of most commonly used functions in modern webapps',
 21 silly publish   main: 'index.js',
 21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   readme: 'README.md',
 21 silly publish   repository:
 21 silly publish    { type: 'git',
 21 silly publish      url: 'git+https://github.com/varun-raj/common-lib.git' },
@@ -39,11 +43,9 @@
 21 silly publish   license: 'MIT',
 21 silly publish   bugs: { url: 'https://github.com/varun-raj/common-lib/issues' },
 21 silly publish   homepage: 'https://github.com/varun-raj/common-lib#readme',
-21 silly publish   readme: '# CommonLib \nA collection of most commonly used functions in modern webapps\n------\n### Installation\n```\nnpm install --save common-lib\n```\n### Usage\n```\nvar CommonLib = require(\'common-lib\');\nCommonLib.functionName();\n```\n### List of currently available functions\n##### For getting the index of an element from an array.\n`getElementIndex(element, array);`\n##### For converting file size to human readable format.\n`humanFileSize(bytes,decimals);`\n##### For converting one digit to two.\n`makeTwoDigit(number);`\n##### For converting an associative array to index array.\n`convertToIndexArray(hash_array);`\n##### For getting value of a url params.\n`getURLParameter(param_name);`\n##### For getting the first letter of a string.\n`getFirstLetter(str);`\n##### For converting the bitrate to a readble format\n`formatebitrate(bits);`\n\n### Contribution.\n* Fork the repo.\n* Add your functions to the `index.js` file.\n* Create a pull request with a proper note about the function.\n\n',
-21 silly publish   readmeFilename: 'README.md',
-21 silly publish   gitHead: '9297dbaf3fe54463b26188b7a27834ead691564d',
+21 silly publish   gitHead: '3947cd42fa03bdb7743f4defe1a2faead10361f4',
 21 silly publish   _id: 'common-lib@1.0.0',
-21 silly publish   _shasum: '12840b0ff0b3dabe6fbed0a95af1c0053069ad36',
+21 silly publish   _shasum: '4ec6fae57b81c2a556eca190ecd91d9b2c3c782a',
 21 silly publish   _from: '.' }
 22 verbose getPublishConfig undefined
 23 silly mapToRegistry name common-lib
@@ -61,22 +63,22 @@
 29 silly publish uploading /Users/varun/.npm/common-lib/1.0.0/package.tgz
 30 verbose request uri https://registry.npmjs.org/common-lib
 31 verbose request sending authorization for write operation
-32 info attempt registry request try #1 at 3:35:29 PM
+32 info attempt registry request try #1 at 3:39:04 PM
 33 verbose request using bearer token for auth
-34 verbose request id 1839a3f12dbde642
+34 verbose request id affeb356be858793
 35 http request PUT https://registry.npmjs.org/common-lib
 36 http 403 https://registry.npmjs.org/common-lib
 37 verbose headers { 'content-type': 'application/json',
 37 verbose headers   'cache-control': 'max-age=300',
 37 verbose headers   'content-length': '95',
 37 verbose headers   'accept-ranges': 'bytes',
-37 verbose headers   date: 'Mon, 08 Aug 2016 10:05:32 GMT',
+37 verbose headers   date: 'Mon, 08 Aug 2016 10:09:07 GMT',
 37 verbose headers   via: '1.1 varnish',
 37 verbose headers   connection: 'keep-alive',
-37 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+37 verbose headers   'x-served-by': 'cache-sin6923-SIN',
 37 verbose headers   'x-cache': 'MISS',
 37 verbose headers   'x-cache-hits': '0',
-37 verbose headers   'x-timer': 'S1470650731.570306,VS0,VE846',
+37 verbose headers   'x-timer': 'S1470650946.268761,VS0,VE929',
 37 verbose headers   vary: 'Accept-Encoding' }
 38 verbose request invalidating /Users/varun/.npm/registry.npmjs.org/common-lib on PUT
 39 error publish Failed PUT 403
@@ -95,7 +97,7 @@
 42 verbose pkgid common-lib
 43 verbose cwd /Users/varun/Projects/common-lib
 44 error Darwin 15.3.0
-45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--update-readme"
 46 error node v6.2.0
 47 error npm  v3.8.9
 48 error code E403
