@@ -1,0 +1,24 @@
+{
+  "name": "common-lib",
+  "version": "1.0.0",
+  "description": "A collection of most commonly used functions in modern webapps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varun-raj/common-lib.git"
+  },
+  "keywords": [
+    "library",
+    "functions",
+    "common"
+  ],
+  "author": "Varun Raj <varun@skcript.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/varun-raj/common-lib/issues"
+  },
+  "homepage": "https://github.com/varun-raj/common-lib#readme"
+}
