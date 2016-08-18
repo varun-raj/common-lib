@@ -39,7 +39,6 @@ exports.getFirstLetter = function(s) {
 	return s.toUpperCase().charAt(0);
 }
 
-
 exports.formatebitrate = function(bits) {
   if (typeof bits !== 'number') {
     return '';
@@ -55,3 +54,15 @@ exports.formatebitrate = function(bits) {
   }
   return bits.toFixed(2) + ' bit/s';
 }
+
+
+exports.twelve2twentyfour = function(t) {
+        pref = "AM"
+        if (t >= 12 && t <= 24) {
+            t = (t - 12);
+            pref = "PM"
+        }
+        if (t == 0)
+            t = "12";
+        return t + " " + pref;
+    };

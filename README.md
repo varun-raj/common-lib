@@ -25,6 +25,8 @@ CommonLib.functionName();
 `getFirstLetter(str);`
 ##### For converting the bitrate to a readble format
 `formatebitrate(bits);`
+##### For converting 12 hour time to 24 hour time format.
+`twelve2twentyfour(int);`
 
 ### Contribution.
 * Fork the repo.
